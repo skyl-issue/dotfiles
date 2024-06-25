@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bash
 iatest=$(expr index "$-" i)
 
 #######################################################
@@ -9,8 +9,9 @@ if [ -f /usr/bin/fastfetch ]; then
 fi
 
 # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+if [ -f /home/sky/bashrc ]; then
+	
+	. /home/sky/bashrc
 fi
 
 # Enable bash programmable completion features in interactive shells
