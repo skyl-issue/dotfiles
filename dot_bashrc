@@ -55,11 +55,6 @@ if [[ $iatest -gt 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 # Set the default editor
 export EDITOR=nvim
 export VISUAL=nvim
-#alias pico='edit'
-#alias spico='sedit'
-#alias nano='edit'
-#alias snano='sedit'
-alias vim='nvim'
 alias vi='nvim'
 
 # Replace batcat with cat on Fedora as batcat is not available as a RPM in any form
@@ -142,12 +137,12 @@ alias vis='nvim "+set si"'
 
 # Change directory aliases
 alias home='cd ~'
-alias cd..='cd ..'
+alias cd.='cd ..'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-
+alias z.='cd ..'
 # cd into the old directory
 alias bd='cd "$OLDPWD"'
 
@@ -563,5 +558,4 @@ bind '"\C-f":"zi\n"'
 export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/.local/share/flatpak/exports/bin"
 
 # Install Starship - curl -sS https://starship.rs/install.sh | sh
-eval "$(starship init bash)"
 eval "$(zoxide init bash)"
